@@ -59,20 +59,16 @@ class _HomePageState extends State<HomePage> {
                   ),
                 );
               },
-              child: Center(
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 30,
-                  width: 120,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14),
-                    color: Colors.lightGreen,
-                  ),
-                  child: const Text(
-                    "Logout",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
+              child: Container(
+                padding: const EdgeInsets.all(10),
+                height: 60,
+                width: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.amberAccent,
+                ),
+                child: Image.asset(
+                  "assets/images/logout.png",
                 ),
               ),
             ),
