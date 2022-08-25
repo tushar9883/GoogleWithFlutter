@@ -27,9 +27,10 @@ class _HomePageState extends State<HomePage> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(60),
                       child: SizedBox(
-                          height: 120,
-                          width: 120,
-                          child: Image.network("${widget.user.photoUrl}")),
+                        height: 120,
+                        width: 120,
+                        child: Image.network("${widget.user.photoUrl}"),
+                      ),
                     ),
                   )
                 : const FlutterLogo(size: 40),
