@@ -34,27 +34,44 @@ class _LoginGoogleState extends State<LoginGoogle> {
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             InkWell(
               onTap: () {
                 singin();
               },
               child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 20),
-                alignment: Alignment.center,
+                margin: const EdgeInsets.symmetric(horizontal: 50),
+                padding: const EdgeInsets.all(3),
                 decoration: const BoxDecoration(
                   borderRadius: BorderRadius.all(
-                    Radius.circular(8),
+                    Radius.circular(2),
                   ),
-                  color: Colors.lightGreen,
+                  color: Color(0xff4285F4),
                 ),
-                child: const Text(
-                  "Google Login",
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.white,
-                  ),
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      height: 40,
+                      width: 40,
+                      color: Colors.white,
+                      child: Image.asset(
+                        "assets/images/google.png",
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 30,
+                    ),
+                    const Text(
+                      "Sign in with Google",
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
