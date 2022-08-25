@@ -36,19 +36,19 @@ class _LoginGoogleState extends State<LoginGoogle> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            InkWell(
-              onTap: () {
-                singin();
-              },
-              child: Container(
-                margin: const EdgeInsets.symmetric(horizontal: 50),
-                padding: const EdgeInsets.all(3),
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(2),
-                  ),
-                  color: Color(0xff4285F4),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 50),
+              padding: const EdgeInsets.all(3),
+              decoration: const BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(2),
                 ),
+                color: Color(0xff4285F4),
+              ),
+              child: InkWell(
+                onTap: () {
+                  singin();
+                },
                 child: Row(
                   children: [
                     Container(
